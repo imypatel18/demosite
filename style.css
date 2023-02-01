@@ -1,0 +1,155 @@
+
+#pagecontainer {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    
+  }
+  #pagecontainer header, footer {
+    grid-column: 1 / 3;
+  }
+   
+ 
+
+
+#pagecontainer header{
+    background-image: url("3.jpg");
+    opacity: 50%;
+    padding: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, black serif;
+    color:rgba(255, 255, 255, 0.877);
+    margin: 0px;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+
+
+#pagecontainer main img{
+    
+
+    height: 200px;
+    
+    padding-left: 2px;
+    width:100%;
+
+
+}
+
+#pagecontainer navbar{
+   margin-top: 0px;
+   padding-top: 70px;
+   
+  
+    padding-right: 2px;
+    font-family:cursive;
+    
+    font-size: 36px;
+    background-color: rgb(133, 188, 132);
+    opacity: 50%;
+    width: 200px;
+    text-align: left;
+    
+    list-style-type: none;
+}
+
+#pagecontainer main h1{
+ color: darkcyan;
+ padding-left: 5px;
+ padding-top: 5px;
+}
+
+#pagecontainer main p{
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.container{
+  
+display: flex;
+
+align-items: center;
+justify-content: space-evenly;
+
+}
+
+.container div{
+  width: 23%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px #eee;
+}
+
+#pagecontainer main h2{
+
+  font-weight: bold;
+  text-align: left;
+  color:darkgreen;
+
+}
+
+#pagecontainer footer{
+  
+  
+
+
+    flex-grow: 1;
+  width: 100%;
+  background-color: green;
+  padding: 10px;
+
+
+}
+
+.flex-container{
+
+  display: flex;
+  grid-column: auto;
+  width: auto;
+  align-items: center;
+  justify-content:space-evenly;
+  column-gap: 40px;
+
+}
+
+.copyright{
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #pagecontainer {
+    display: block;
+  }
+  .element {
+    float: none;
+    clear: none;
+    overflow: visible;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .container div {
+    flex-wrap: wrap;
+  }
+
+  #pagecontainer footer div {
+    width: 100%;
+  }
+
+  .flex-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
